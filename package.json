@@ -1,0 +1,19 @@
+{
+  "name": "es3-typescript",
+  "version": "1.0.0",
+  "description": "Atividade proposta em aula ES3 no dia 08/05/20.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RichadSkyrrs/ES3-TYPESCRIPT.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RichadSkyrrs/ES3-TYPESCRIPT/issues"
+  },
+  "homepage": "https://github.com/RichadSkyrrs/ES3-TYPESCRIPT#readme"
+}
