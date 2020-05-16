@@ -1,11 +1,10 @@
-import ProductRepository from '../repositories/ClienteRepository';
-import Product from '../models/Cliente';
-import Cliente from '../models/Cliente';
+import ClientRepository from '../repositories/ClientRepository';
+import Client from '../models/Client';
 
-export default class CreateClienteService {
-  private repository: ClienteRepository;
+export default class CreateClientService {
+  private repository: ClientRepository;
 
-  constructor(repository: ClienteRepository) {
+  constructor(repository: ClientRepository) {
     this.repository = repository;
   }
 
@@ -16,12 +15,12 @@ export default class CreateClienteService {
     lovers,
     sellPrice,
     tags,
-  }: Cliente): Cliente {
+  }: Client): Client {
     const product = this.repository.findByCode(code);
     if (product) {
-      throw Error('Produto já cadastrado');
+      throw Error('Cliente já cadastrado');
     } else {
-      const p = new Cliente({
+      const p = new Client({
         buyPrice,
         code,
         description,
